@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { TextField, TextAreaField } from '@/components/Fields'
+import { useState } from "react"
+import { Button } from "@/components/Button"
+import { Container } from "@/components/Container"
+import { TextField, TextAreaField } from "@/components/Fields"
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    email: '',
-    message: '',
+    firstName: "",
+    email: "",
+    message: "",
     mailingList: false,
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -17,12 +17,12 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission here
-    console.log('Form submitted:', formData)
+    console.log("Form submitted:", formData)
     setIsSubmitted(true)
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
-      setFormData({ firstName: '', email: '', message: '', mailingList: false })
+      setFormData({ firstName: "", email: "", message: "", mailingList: false })
       setIsSubmitted(false)
     }, 3000)
   }
@@ -31,7 +31,7 @@ export function Contact() {
     const { name, value, type, checked } = e.target
     setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     }))
   }
 
@@ -47,8 +47,8 @@ export function Contact() {
             Get in Touch
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Ready to partner with Colorado's premier cannabis wholesaler? <br/>Contact
-             Green Mountain Cannabis today.
+            Ready to partner with Colorado&apos;s premier cannabis wholesaler? <br />
+            Contact Green Mountain Cannabis today.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export function Contact() {
                 Thank you!
               </h3>
               <p className="mt-2 text-slate-700">
-                We'll get back to you shortly.
+                We&apos;ll get back to you shortly.
               </p>
             </div>
           ) : (
@@ -89,11 +89,11 @@ export function Contact() {
                 />
 
                 <TextAreaField
-                    label="Your Message"
-                    name="message"
-                    required
-                    value={formData.message}
-                    placeholder="Enter your message here"
+                  label="Your Message"
+                  name="message"
+                  required
+                  value={formData.message}
+                  placeholder="Enter your message here"
                 />
 
                 <div className="flex items-center">
