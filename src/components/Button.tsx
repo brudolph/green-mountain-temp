@@ -50,9 +50,9 @@ export function Button({ className, ...props }: ButtonProps) {
   className = clsx(
     baseStyles[props.variant],
     props.variant === 'outline'
-      ? variantStyles.outline[props.color]
+      ? variantStyles.outline[props.color ?? 'slate']
       : props.variant === 'solid'
-        ? variantStyles.solid[props.color]
+        ? variantStyles.solid[props.color ?? 'primary']
         : undefined,
     className,
   )
