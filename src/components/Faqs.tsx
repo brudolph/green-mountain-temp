@@ -81,7 +81,7 @@ export function Faqs() {
           >
             Frequently asked questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-slate-300">
             If you can’t find what you’re looking for, email our support team
             and if you’re lucky someone will get back to you.
           </p>
@@ -98,7 +98,7 @@ export function Faqs() {
                     <h3 className="font-display text-lg/7 text-slate-900">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
+                    <p className="mt-4 text-sm text-slate-300">{faq.answer}</p>
                   </li>
                 ))}
               </ul>

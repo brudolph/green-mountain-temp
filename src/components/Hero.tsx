@@ -11,8 +11,8 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-22">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+    <Container className="pt-5 pb-16 text-center lg:pt-22">
+      <h1 className="mx-auto max-w-4xl font-display text-4xl font-medium tracking-tight text-slate-300 sm:text-6xl">
         Your{' '}
         <span className="relative whitespace-nowrap text-primary">
           <svg
@@ -27,7 +27,7 @@ export function Hero() {
         </span>{' '}
         Cannibas Partner.
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      {/* <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-300">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         iusto nulla dolorum aliquam rem illo architecto, ducimus soluta officiis
         itaque quia, ipsum voluptatum exercitationem doloribus.
@@ -46,7 +46,7 @@ export function Hero() {
           </svg>
           <span className="ml-3">Watch video</span>
         </Button>
-      </div>
+      </div> */}
     </Container>
   )
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
+import { Button } from '@/components/Button'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
 import avatarImage3 from '@/images/avatars/avatar-3.png'
@@ -83,18 +84,26 @@ export function Testimonials() {
     <section
       id="testimonials"
       aria-label="What our customers are saying"
-      className="bg-slate-50 py-20 sm:py-32"
+      className="bg-gray-950 py-16 sm:py-22"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses.
+          <h2 className="font-display text-3xl tracking-tight text-slate-300 sm:text-4xl">
+            We got you covered.
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit debitis maxime voluptates quam, accusantium quos mollitia corrupti blanditiis ipsa adipisci nisi dolorum rem doloremque incidunt, unde distinctio! Natus, hic?.
+          <p className="mt-4 text-lg tracking-tight text-slate-400">
+            We got something cooking for 2026. <br/>For now download our latest inventory sheet.   
           </p>
+          <Button
+            href="/Green-Mountain-Cannabis-Inventory-Sheet.pdf"
+            className="mt-6 text-xl p-6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Inventory Sheet
+          </Button>
         </div>
-        <ul
+        {/* <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
         >
@@ -135,7 +144,7 @@ export function Testimonials() {
               </ul>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </Container>
     </section>
   )

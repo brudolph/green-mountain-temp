@@ -89,7 +89,7 @@ export function Header() {
         <Link href="#" aria-label="Home">
           <Logo className="h-40 w-auto" />
         </Link>
-        <div className="mt-5 flex w-full justify-center border-t border-primary/20 p-4">
+        {/* <div className="mt-5 flex w-full justify-center border-t border-primary/20 p-4">
           <nav className="relative z-50 flex">
             <div className="flex items-center md:gap-x-12">
               <div className="hidden md:flex md:gap-x-6">
@@ -100,7 +100,7 @@ export function Header() {
               </div>
             </div>
           </nav>
-        </div>
+        </div> */}
       </Container>
     </header>
   )

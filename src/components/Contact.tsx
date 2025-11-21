@@ -39,14 +39,14 @@ export function Contact() {
     <section
       id="contact"
       aria-label="Contact Green Mountain Cannabis"
-      className="bg-slate-50 py-20 sm:py-32"
+      className="bg-gray-950 py-16 sm:py-22"
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="font-display text-3xl tracking-tight text-slate-300 sm:text-4xl">
             Get in Touch
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-slate-400">
             Ready to partner with Colorado&apos;s premier cannabis wholesaler? <br />
             Contact Green Mountain Cannabis today.
           </p>
@@ -58,7 +58,7 @@ export function Contact() {
               <h3 className="font-display text-2xl text-slate-900">
                 Thank you!
               </h3>
-              <p className="mt-2 text-slate-700">
+              <p className="mt-2 text-slate-300">
                 We&apos;ll get back to you shortly.
               </p>
             </div>
